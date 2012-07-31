@@ -2,6 +2,14 @@
 
   LevelDB shell implemented in multiple programing languages.
 
+## ldb.php
+
+  Dependencies: https://github.com/reeze/php-leveldb
+
+## ldb.py
+
+  Dependencies: http://code.google.com/p/leveldb/
+
 ## License 
 
 (The MIT License)
