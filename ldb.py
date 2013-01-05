@@ -4,7 +4,7 @@ LevelDB Shell
 Copyright(c) 2012 Shaun Li <shonhen@gmail.com>
 MIT Licensed
 '''
-from leveldb import LevelDB, Iterator, WriteBatch
+from leveldb import LevelDB, WriteBatch
 import re
 import sys
 
@@ -19,15 +19,12 @@ class LevelDBShell:
     return self._db
 
   def actionKeys(self, pattern = None):
-    it = Iterator(self.db())
-    it.First()
-    while it.Validate():
+    for key, value in self.db().RangeIter():
       if pattern is None:
-        print it.Key()
+        print key
       else:
-        if re.match(r'^%s$' % pattern, it.Key()):
-          print it.Key()
-      it.Next()
+        if re.match(r'^%s$' % pattern, key):
+          print key
 
   def actionGet(self, key):
     print self.db().Get(key)
