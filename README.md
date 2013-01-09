@@ -12,6 +12,12 @@
     sudo apt-get install libsnappy-dev libleveldb-dev python-dev gcc python-pip git-core
     sudo pip install git+https://github.com/shaunlee/LevelDB-Shell.git#egg=leveldb-shell
 
+## Python usage instructions
+
+  Run with no arguments:
+
+    leveldb-shell
+
 ## ldb.php
 
   Dependencies: https://github.com/reeze/php-leveldb

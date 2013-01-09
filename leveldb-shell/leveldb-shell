@@ -69,7 +69,7 @@ if __name__ == '__main__':
     if e.message:
       print e.message
     print '''Usage:
-  ldb -d <folder> <command> [<args>]
+  leveldb-shell -d <folder> <command> [<args>]
 
 The most commonly used commands are:
   keys [pattern]
