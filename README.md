@@ -2,13 +2,19 @@
 
   LevelDB shell implemented in multiple programing languages.
 
+## Python installation on Fedora with PIP
+
+    sudo yum install snappy-devel leveldb-devel python-devel gcc python-pip git
+    sudo pip-python install git+https://github.com/shaunlee/LevelDB-Shell.git#egg=leveldb-shell
+
+## Python installation on Ubuntu with PIP
+
+    sudo apt-get install libsnappy-dev libleveldb-dev python-dev gcc python-pip git-core
+    sudo pip install git+https://github.com/shaunlee/LevelDB-Shell.git#egg=leveldb-shell
+
 ## ldb.php
 
   Dependencies: https://github.com/reeze/php-leveldb
-
-## ldb.py
-
-  Dependencies: http://code.google.com/p/leveldb/
 
 ## License 
 
@@ -33,4 +39,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
